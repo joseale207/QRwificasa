@@ -301,3 +301,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500); // Tiempo de la animación en milisegundos
   });
 });
+function handler(req, res) {
+  const result = calculateSomething();
+  console.log("Resultado de calculateSomething:", result);  // Agregar un log para revisar qué devuelve
+  res.send(result.toString());
+}
