@@ -1,0 +1,35 @@
+is<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>QR WiFi Casa</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    img {
+      max-width: 300px;
+      margin: 20px 0;
+    }
+    h1 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Conéctate al WiFi de casa</h1>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=WIFI:T:WPA;S:REDWIFI_Tdt7;P:Ron.Whisky.Vino_invita2;;&size=200x200" alt="QR WiFi">
+  <p>Escanea el QR con tu móvil para conectarte automáticamente.</p>
+</body>
+</html>
